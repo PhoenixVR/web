@@ -1,4 +1,57 @@
-%html
-  %head
-  %body
-    %h1 Welcome!
+
+.container
+  .row
+    .box
+      .col-lg-12.text-center
+        #carousel-example-generic.carousel.slide
+          / Indicators
+          %ol.carousel-indicators.hidden-xs
+            %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+            %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+            %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+          / Wrapper for slides
+          .carousel-inner
+            .item.active
+              %img.img-responsive.img-full{src: "assets/oculus.jpg"}/
+            .item
+              %img.img-responsive.img-full{src: "assets/vrguy.jpg"}/
+            .item
+              %img.img-responsive.img-full{src: "assets/ces.jpg"}/
+          / Controls
+          %a.left.carousel-control{"data-slide" => "prev", href: "#carousel-example-generic"}
+            %span.icon-prev
+          %a.right.carousel-control{"data-slide" => "next", href: "#carousel-example-generic"}
+            %span.icon-next
+        %h1
+          %small Welcome to
+          %br/
+          %span.brand-name Project Zenith
+          %hr.tagline-divider/
+          %small
+            By
+            %strong Phoenix VR
+  .row
+    .box
+      .col-lg-12
+        %hr/
+        %h2.intro-text.text-center
+          Touch your 
+          %strong new reality
+        %hr/
+        %img.img-responsive.img-border.img-left{src: "assets/intro-pic.jpg"}/
+        %hr.visible-xs/
+        %p Peripherals for VR experiences are going to play an incredibly important role in transitioning to the next phase in immersive entertainment.  Finger-tracking gloves and software will enable users to interact with sensitive virtual equipment such as flight simulators and virtual keyboards.  They will also enable more freedom for interacting with virtual objects such as doors and weapons.  A prototype pair of VR Gloves can be produced with Unity and Arduino for less than $400 as evidenced by Randy Phillip’s VR Gloves project, which can be found documented here.  
+        %p Our hypothesis is that an inexpensive pair of VR Gloves (<$150) with accompanying software that enables for gesture recognition and finger tracking would be consumed by the gaming market and will easily expand to defense, medicine, and other forms of home entertainment.  In addition, we predict that we will be able to build a working prototype of the glove within 6 months and an alpha build of the glove with the software ready to manufacture and sell in under 12 months.
+
+  .row
+    .box
+      .col-lg-12
+        %hr/
+        %h2.intro-text.text-center
+          Working together with the 
+          %strong Kravis Leadership Institute
+        %hr/
+        %p 
+          We are working with KLI while we compete in their Innovative Startup Award contest.  For more information, please visit 
+          %a{href: "http://kravisleadershipinstitute.org/leadership/innovative-start-up-award/"} KLI's webpage.
+/ /.container

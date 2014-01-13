@@ -1,0 +1,15 @@
+.container
+  .row
+    .box
+      .col-mid-4
+        %form.form{action: "#", method: "post"}
+          .get-in-touch
+            %h3.text-center
+              Get in Touch
+            .form-group
+              %input#name.form-control{placeholder: "Name", required: "", type: "text"}/
+            .form-group
+              %input#Email.form-control{placeholder: "Email", required: "", type: "email"}/
+            .form-group
+              %textarea.form-control{placeholder: "Message", required: "", rows: "3"}
+            %a.btn.btn-danger.btn-sm.btn-block{href: "http://www.jquery2dotnet.com", role: "button"} Send it!
